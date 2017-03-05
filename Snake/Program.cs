@@ -17,7 +17,8 @@ namespace Snake
             FileStream fs = new FileStream("save.xml", FileMode.Truncate, FileAccess.Write);            
             XmlSerializer xs = new XmlSerializer(typeof(Game));            
             xs.Serialize(fs, game);
-            fs.Close();                            
+            fs.Close();    ]
+                                    
         }
 
         public static Game Deserialize()
